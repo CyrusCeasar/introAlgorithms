@@ -9,6 +9,8 @@
 #include "AvlTree.h"
 #include "Quenen.h"
 #include "mergesort.h"
+#include "shellsort.h"
+#include "quicksort.h"
 
 #define swap(a,b)  {a= a+b; b = a-b;a = a-b;}
 
@@ -210,7 +212,9 @@ int main()
 //	testMinHeap();
 	//testBinaryTree();
 	int datas[8] = {3,1,2,3,4,7,2,3};
-	mergesort::MergeSort(datas, 8);
+	quicksort::quick_sort(datas, 0, 8);
+//	mergesort::MergeSort(datas, 8);
+//	shellsort::shell_sort(datas, 8);
 //	recursive_xuanze(datas, 8);
 
 //	charu(datas,8);
